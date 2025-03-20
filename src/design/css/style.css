@@ -1,0 +1,218 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto/Roboto-Regular.ttf") format("woff2");
+}
+.text-48 {
+  font-size: 48px;
+}
+
+.text-24 {
+  font-size: 24px;
+}
+
+.text-14 {
+  font-size: 14px;
+}
+
+.text-10 {
+  font-size: 10px;
+}
+
+.burgundy {
+  color: #580702;
+}
+
+.jc {
+  justify-content: center;
+}
+
+.js {
+  justify-content: start;
+}
+
+.je {
+  justify-content: end;
+}
+
+.df {
+  display: flex;
+}
+
+.dif {
+  display: inline-flex;
+}
+
+.aic {
+  align-items: center;
+}
+
+.aie {
+  align-items: end;
+}
+
+.ais {
+  align-items: start;
+}
+
+::-moz-selection {
+  color: #1f1f1f;
+  background-color: #81a09a;
+}
+
+::selection {
+  color: #1f1f1f;
+  background-color: #81a09a;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto/Roboto-Regular.ttf") format("woff2");
+}
+.text-48 {
+  font-size: 48px;
+}
+
+.text-24 {
+  font-size: 24px;
+}
+
+.text-14 {
+  font-size: 14px;
+}
+
+.text-10 {
+  font-size: 10px;
+}
+
+.burgundy {
+  color: #580702;
+}
+
+.jc {
+  justify-content: center;
+}
+
+.js {
+  justify-content: start;
+}
+
+.je {
+  justify-content: end;
+}
+
+.df {
+  display: flex;
+}
+
+.dif {
+  display: inline-flex;
+}
+
+.aic {
+  align-items: center;
+}
+
+.aie {
+  align-items: end;
+}
+
+.ais {
+  align-items: start;
+}
+
+::-moz-selection {
+  color: #1f1f1f;
+  background-color: #81a09a;
+}
+
+::selection {
+  color: #1f1f1f;
+  background-color: #81a09a;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.border-weather {
+  border: 1px solid #81a09a;
+  margin: 40px;
+  height: 50vh;
+  background-image: url("../assets/backgrounds/rainy.svg");
+  background-position: center;
+  background-size: 112%;
+}
+
+.content {
+  height: 50vh;
+}
+
+.bottom {
+  margin-bottom: 50px;
+}
+
+.right {
+  -webkit-backdrop-filter: blur(13px);
+          backdrop-filter: blur(13px);
+}
+
+.bottom-line {
+  border-bottom: 1px white solid;
+}
+
+body {
+  background-color: #1f1f1f;
+  color: #f8f8f8;
+  font-family: "Roboto";
+}
+
+.base {
+  margin-top: 150px;
+}
+
+.baseWrapper {
+  width: 50vw;
+}
+
+.border-wrapper {
+  border: #515151 1px solid;
+  width: 98%;
+  height: 50vh;
+  border-radius: 13px;
+  background-color: #e3ebf2;
+  box-shadow: 1px 4px 9px 1px black;
+}
+
+.col-sm-12:nth-of-type(1) .border-wrapper {
+  background-image: url("../assets/backgrounds/weatherbg.svg");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+.col-sm-12:nth-of-type(1) .border-wrapper:hover {
+  box-shadow: 0px 0px 9px 1px #515151;
+  transition: 0.3s;
+}
+.col-sm-12:nth-of-type(1) .border-wrapper:active {
+  border: 1px solid #f8f8f8;
+  box-shadow: 0px 0px 4px 0px #f8f8f8;
+}
+
+.col-sm-12:nth-of-type(2) .border-wrapper {
+  background-image: url("../assets/backgrounds/calculatorbg.svg");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+.col-sm-12:nth-of-type(2) .border-wrapper:hover {
+  box-shadow: 0px 0px 9px 1px #515151;
+  transition: 0.3s;
+}
+.col-sm-12:nth-of-type(2) .border-wrapper:active {
+  border: 1px solid #f8f8f8;
+  box-shadow: 0px 0px 4px 0px #f8f8f8;
+}/*# sourceMappingURL=style.css.map */

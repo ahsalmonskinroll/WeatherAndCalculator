@@ -1,0 +1,56 @@
+@import "./variables.scss";
+@import "./weather.scss";
+
+body {
+  background-color: $black;
+  color: $white;
+  font-family: "Roboto";
+}
+
+.base {
+  margin-top: 150px;
+}
+
+// wrapper
+.baseWrapper {
+  width: 50vw;
+}
+
+.border-wrapper {
+  border: $darkgray 1px solid;
+  width: 98%;
+  height: 50vh;
+  border-radius: 13px;
+  background-color: $lightblue;
+  box-shadow: 1px 4px 9px 1px black;
+}
+
+.col-sm-12:nth-of-type(1) .border-wrapper {
+  background-image: url("../assets/backgrounds/weatherbg.svg");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  &:hover {
+    box-shadow: 0px 0px 9px 1px $darkgray;
+    transition: 0.3s;
+  }
+  &:active {
+    border: 1px solid $white;
+    box-shadow: 0px 0px 4px 0px $white;
+  }
+}
+// calculator
+.col-sm-12:nth-of-type(2) .border-wrapper {
+  background-image: url("../assets/backgrounds/calculatorbg.svg");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  &:hover {
+    box-shadow: 0px 0px 9px 1px $darkgray;
+    transition: 0.3s;
+  }
+  &:active {
+    border: 1px solid $white;
+    box-shadow: 0px 0px 4px 0px $white;
+  }
+}

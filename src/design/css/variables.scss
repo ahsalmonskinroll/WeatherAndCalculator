@@ -1,0 +1,72 @@
+// colors
+$green: #81a09a;
+$darkgray: #515151;
+$black: #1f1f1f;
+$white: #f8f8f8;
+$darkblue: #272030;
+$lightblue: #e3ebf2;
+$burgundy: #580702;
+
+// fontlar
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto/Roboto-Regular.ttf") format("woff2");
+}
+
+@mixin text-size($size) {
+  font-size: $size;
+}
+
+.text-48 {
+  @include text-size(48px);
+}
+
+.text-24 {
+  @include text-size(24px);
+}
+.text-14 {
+  @include text-size(14px);
+}
+.text-12 {
+  @include text-size(12px);
+}
+
+// fontlar ve renkler
+.burgundy {
+  color: $burgundy;
+}
+
+// konumlar
+.jc {
+  justify-content: center;
+}
+.js {
+  justify-content: start;
+}
+.je {
+  justify-content: end;
+}
+.df {
+  display: flex;
+}
+.dif {
+  display: inline-flex;
+}
+.aic {
+  align-items: center;
+}
+.aie {
+  align-items: end;
+}
+.ais {
+  align-items: start;
+}
+
+::selection {
+  color: $black;
+  background-color: $green;
+}
+
+.pointer {
+  cursor: pointer;
+}
