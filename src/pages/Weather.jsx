@@ -19,11 +19,13 @@ function Weather() {
                     </div>
                     <div className="col df aie">
                       <div className="row">
-                        <div className="col-12 df jc text-24">London</div>
+                        <div className="col-12 text-24 p-0 df jc">London</div>
                         <div className="col-12 text-12">
-                          <div className="row">
-                            <div className="col-4">06:09</div>
-                            <div className="col-8">-Sunday, 6 Oct '25</div>
+                          <div className="row row-cols-2 df jc">
+                            <div className="col-auto p-0">06:09</div>
+                            <div className="col-auto p-0">
+                              -Sunday, 6 Oct '25
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -58,10 +60,18 @@ function Weather() {
                     <div className="col-12 text-12 rainy">
                       <div className="row">
                         <div className="results dg gap-3 mt-4 ">
-                          <div className="col-12 pointer">Manchester</div>
-                          <div className="col-12 pointer">New York</div>
-                          <div className="col-12 pointer">Birmingham</div>
-                          <div className="col-12 pointer">California</div>
+                          <div className="col-12 pointer">
+                            <div>Manchester</div>
+                          </div>
+                          <div className="col-12 pointer">
+                            <div>New York</div>
+                          </div>
+                          <div className="col-12 pointer">
+                            <div>Birmingham</div>
+                          </div>
+                          <div className="col-12 pointer">
+                            <div>California</div>
+                          </div>
                           <div className="col-12 bottom-line mt-4"></div>
                         </div>
                       </div>

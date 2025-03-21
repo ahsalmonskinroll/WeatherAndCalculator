@@ -3,7 +3,7 @@
   src: url("../fonts/roboto/Roboto-Regular.ttf") format("woff2");
 }
 .text-48 {
-  font-size: 60px;
+  font-size: 108px;
 }
 
 .text-36 {
@@ -11,7 +11,7 @@
 }
 
 .text-24 {
-  font-size: 24px;
+  font-size: 36px;
 }
 
 .text-19 {
@@ -99,12 +99,10 @@
   background-size: 112%;
   box-shadow: -1px 0px 20px 3px #373535;
   width: 50vw;
-  border-radius: 10px;
 }
 
 .content {
   height: 60vh;
-  border-radius: 10px;
 }
 
 .bottom {
@@ -130,21 +128,23 @@
 }
 
 .weather-imgs {
-  width: 30px;
+  width: 38px;
 }
 .weather-imgs img {
   width: 100%;
 }
 
 .degree {
-  line-height: 50px;
+  line-height: 75px;
 }
 
-@media (min-width: 1024px) {
-  .border-weather {
-    background-size: 112%;
-  }
+.results .col-12.pointer {
+  cursor: pointer;
 }
+.results .col-12.pointer:hover {
+  color: #e3ebf2;
+}
+
 @media (max-width: 1024px) {
   .border-weather {
     background-size: cover;

@@ -7,12 +7,12 @@
   background-size: 112%;
   box-shadow: -1px 0px 20px 3px #373535;
   width: 50vw;
-  border-radius: 10px;
+  // border-radius: 10px;
 }
 
 .content {
   height: 60vh;
-  border-radius: 10px;
+  // border-radius: 10px;
 }
 
 .bottom {
@@ -38,21 +38,31 @@
 }
 
 .weather-imgs {
-  width: 30px;
+  width: 38px;
   img {
     width: 100%;
   }
 }
 
 .degree {
-  line-height: 50px;
+  line-height: 75px;
 }
 
-@media (min-width: 1024px) {
-  .border-weather {
-    background-size: 112%;
+.results{
+  .col-12.pointer{
+    cursor: pointer;
+    
+    &:hover{
+      color: $lightblue;
+    }
   }
 }
+
+// @media (min-width: 1024px) {
+//   .border-weather {
+//     background-size: 112%;
+//   }
+// }
 
 @media (max-width: 1024px) {
   .border-weather {

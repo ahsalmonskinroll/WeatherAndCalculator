@@ -10,7 +10,7 @@ function App() {
         <div className="baseWrapper">
           <div className="container">
             <div className="row">
-              <div className="col-sm-12 col-md-12 col-lg-6 df jc">
+              <div className="col-sm-12 col-md-12 col-lg-6 df jc hd">
                 <div
                   className="row border-wrapper pointer"
                   onClick={() => navigate("/weather")}
@@ -20,7 +20,7 @@ function App() {
                   </div>
                 </div>
               </div>
-              <div className="col-sm-12 col-md-12 col-lg-6 df jc">
+              <div className="col-sm-12 col-md-12 col-lg-6 df jc hm">
                 <div
                   className="row border-wrapper pointer"
                   onClick={() => navigate("/calculator")}
