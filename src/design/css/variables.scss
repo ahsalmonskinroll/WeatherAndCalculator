@@ -6,6 +6,8 @@ $white: #f8f8f8;
 $darkblue: #272030;
 $lightblue: #e3ebf2;
 $burgundy: #580702;
+$rainy-blue: #7ba0b3;
+$orange: #fb8729;
 
 // fontlar
 @font-face {
@@ -18,12 +20,20 @@ $burgundy: #580702;
 }
 
 .text-48 {
-  @include text-size(48px);
+  @include text-size(60px);
+}
+.text-36 {
+  @include text-size(36px);
 }
 
 .text-24 {
   @include text-size(24px);
 }
+
+.text-19 {
+  @include text-size(19px);
+}
+
 .text-14 {
   @include text-size(14px);
 }
@@ -34,6 +44,9 @@ $burgundy: #580702;
 // fontlar ve renkler
 .burgundy {
   color: $burgundy;
+}
+.rainy {
+  color: $rainy-blue;
 }
 
 // konumlar
@@ -52,6 +65,9 @@ $burgundy: #580702;
 .dif {
   display: inline-flex;
 }
+.dg {
+  display: grid;
+}
 .aic {
   align-items: center;
 }
@@ -60,6 +76,14 @@ $burgundy: #580702;
 }
 .ais {
   align-items: start;
+}
+
+.base1 {
+  margin-top: 150px;
+}
+
+.base2 {
+  margin-top: 7vw;
 }
 
 ::selection {

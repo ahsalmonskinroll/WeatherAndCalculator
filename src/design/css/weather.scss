@@ -1,32 +1,61 @@
 @import "./variables.scss";
 
 .border-weather {
-  border: 1px solid $green;
   margin: 40px;
-  height: 50vh;
   background-image: url("../assets/backgrounds/rainy.svg");
   background-position: center;
   background-size: 112%;
+  box-shadow: -1px 0px 20px 3px #373535;
+  width: 50vw;
+  border-radius: 10px;
 }
 
 .content {
-  height: 50vh;
+  height: 60vh;
+  border-radius: 10px;
 }
 
 .bottom {
   margin-bottom: 50px;
 }
 
-.right{
+.right {
   backdrop-filter: blur(13px);
 }
 
-.bottom-line{
-  border-bottom: 1px white solid;
+.bottom-line {
+  border-bottom: 1px solid $rainy-blue;
 }
-// .bottom-line::after{
-//   content: "";
-//   display: block;
-//   width: 50%;  // Çizgi uzunluğu (örneğin %50)
-//   height: 1px;
-// }
+
+.search-box {
+  padding: 12px;
+  width: 47px;
+  background-color: $rainy-blue;
+
+  img {
+    width: 100%;
+  }
+}
+
+.weather-imgs {
+  width: 30px;
+  img {
+    width: 100%;
+  }
+}
+
+.degree {
+  line-height: 50px;
+}
+
+@media (min-width: 1024px) {
+  .border-weather {
+    background-size: 112%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .border-weather {
+    background-size: cover;
+  }
+}

@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-      <main className="base df jc aic">
+      <main className="base1 df jc aic">
         <div className="baseWrapper">
           <div className="container">
             <div className="row">

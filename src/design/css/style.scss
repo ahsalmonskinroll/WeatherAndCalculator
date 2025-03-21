@@ -1,14 +1,11 @@
 @import "./variables.scss";
 @import "./weather.scss";
+@import "./calculator.scss";
 
 body {
   background-color: $black;
   color: $white;
   font-family: "Roboto";
-}
-
-.base {
-  margin-top: 150px;
 }
 
 // wrapper
@@ -31,7 +28,7 @@ body {
   background-position: bottom;
   background-repeat: no-repeat;
   &:hover {
-    box-shadow: 0px 0px 9px 1px $darkgray;
+    box-shadow: 0px 0px 13px 3px #9e9999cf;
     transition: 0.3s;
   }
   &:active {
@@ -46,7 +43,7 @@ body {
   background-position: bottom;
   background-repeat: no-repeat;
   &:hover {
-    box-shadow: 0px 0px 9px 1px $darkgray;
+    box-shadow: 0px 0px 13px 3px #9e9999cf;
     transition: 0.3s;
   }
   &:active {
