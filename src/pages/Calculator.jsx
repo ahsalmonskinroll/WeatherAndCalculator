@@ -8,12 +8,12 @@ function Calculator() {
 
   return (
     <>
-    <div className="App">
+    {/* <div className="App">
       <Calculator1/>
       <p className="developer">
         Developed by 👩🏻‍💻 <span>Kumsal</span>
       </p>
-    </div>
+    </div> */}
 
 
 
@@ -26,7 +26,13 @@ function Calculator() {
             <div className="filter df jc aic">
               <div className="clc">
                 <div className="col square">
-                  <div className="row pad">
+                <div className="App">
+      <Calculator1/>
+      <p className="developer">
+        Developed by 👩🏻‍💻 <span>Kumsal</span>
+      </p>
+    </div>
+                  {/* <div className="row pad">
                     <div className="col-12 text-36 df je aic">123 x 28</div>
                     <div className="col-12 mt-3 text-19">
                       <div className="row g-4">
@@ -112,7 +118,7 @@ function Calculator() {
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
                 <div
                   className="circle pointer df jc aic"
