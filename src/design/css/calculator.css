@@ -222,7 +222,7 @@
 }
 
 .weather-imgs {
-  width: 30px;
+  width: 38px;
 }
 .weather-imgs img {
   width: 100%;
@@ -244,6 +244,108 @@
     background-size: cover;
   }
 }
+button {
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: transparent;
+  color: inherit;
+}
+
+body {
+  background-size: 20px 20px;
+}
+
+.App {
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.developer span {
+  font-weight: 600;
+  color: #81a09a;
+}
+
+.calculator {
+  border: 3px solid #81a09a;
+  border-radius: 10px;
+  max-width: 600px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.displayWindow {
+  background-color: #1f1f1f;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 1rem;
+  height: 120px;
+  flex-direction: column;
+}
+.displayWindowexpression {
+  overflow-x: auto;
+  width: 100%;
+  text-align: right;
+  color: #81a09a;
+  font-weight: 600;
+  scrollbar-width: none;
+}
+.displayWindowresult {
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+.keysWindow {
+  background-color: #515151;
+  display: flex;
+  padding: 1rem;
+  gap: 1rem;
+}
+.keysWindow button {
+  padding: 0.8rem 1.2rem;
+  font-size: 1.3rem;
+  cursor: pointer;
+  color: #81a09a;
+  border-radius: 5px;
+}
+.keysWindow button:hover {
+  background-color: rgba(55, 53, 53, 0.2);
+}
+
+.keys_scientific {
+  width: 30%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.line {
+  margin-block: 1.5rem;
+  width: 2px;
+  background-color: rgba(81, 81, 81, 0.08);
+}
+
+.keys_basic {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.5rem;
+}
+.keys_basic .equal {
+  background-color: #fb8729;
+  color: #1f1f1f;
+}
+.keys_basic .number {
+  color: white;
+  font-weight: 600;
+}
+
 .border-weather2 {
   margin: 40px;
   background-image: url("../assets/backgrounds/rainy.svg");
@@ -350,6 +452,25 @@
 @media (max-width: 609px) {
   .clc {
     width: 39vw;
+  }
+}
+@media (max-width: 610px) {
+  body {
+    padding: 1rem;
+  }
+  .calculator {
+    margin: 1rem;
+  }
+  .keysWindow {
+    flex-direction: column;
+    gap: 0;
+  }
+  .line {
+    display: none;
+  }
+  .keys_scientific {
+    width: 100%;
+    grid-template-columns: repeat(5, 1fr);
   }
 }
 @media (max-width: 425px) {

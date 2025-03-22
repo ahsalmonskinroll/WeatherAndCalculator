@@ -1,15 +1,31 @@
 import { useState } from "react";
 import crossimg from "../design/assets/icons/cross.svg";
+import { Navigate, useNavigate } from "react-router-dom";
+import Calculator1 from "../components/Calculator1";
 
 function Calculator() {
+  const navigate = useNavigate();
+
   return (
     <>
+    <div className="App">
+      <Calculator1/>
+      <p className="developer">
+        Developed by 👩🏻‍💻 <span>Kumsal</span>
+      </p>
+    </div>
+
+
+
+
+
+
       <main className="base2 df jc aic">
         <div className="container df jc">
           <div className="row border-weather2  df jc">
             <div className="filter df jc aic">
               <div className="clc">
-                <div class="col square">
+                <div className="col square">
                   <div className="row pad">
                     <div className="col-12 text-36 df je aic">123 x 28</div>
                     <div className="col-12 mt-3 text-19">
@@ -98,7 +114,10 @@ function Calculator() {
                     </div>
                   </div>
                 </div>
-                <div class="circle pointer df jc aic">
+                <div
+                  className="circle pointer df jc aic"
+                  onClick={() => navigate("/")}
+                >
                   <div className="cross">
                     <img src={crossimg} alt="close" />
                   </div>
