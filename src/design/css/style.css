@@ -670,6 +670,130 @@ body {
     height: 80vh;
   }
 }
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto/Roboto-Regular.ttf") format("woff2");
+}
+.text-48 {
+  font-size: 108px;
+}
+
+.text-36 {
+  font-size: 36px;
+}
+
+.text-24 {
+  font-size: 36px;
+}
+
+.text-19 {
+  font-size: 19px;
+}
+
+.text-14 {
+  font-size: 14px;
+}
+
+.text-12 {
+  font-size: 12px;
+}
+
+.burgundy {
+  color: #580702;
+}
+
+.rainy {
+  color: #7ba0b3;
+}
+
+.jc {
+  justify-content: center;
+}
+
+.js {
+  justify-content: start;
+}
+
+.je {
+  justify-content: end;
+}
+
+.df {
+  display: flex;
+}
+
+.dif {
+  display: inline-flex;
+}
+
+.dg {
+  display: grid;
+}
+
+.aic {
+  align-items: center;
+}
+
+.aie {
+  align-items: end;
+}
+
+.ais {
+  align-items: start;
+}
+
+.base1 {
+  margin-top: 150px;
+}
+
+.base2 {
+  margin-top: 7vw;
+}
+
+::-moz-selection {
+  color: #1f1f1f;
+  background-color: #81a09a;
+}
+
+::selection {
+  color: #1f1f1f;
+  background-color: #81a09a;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.tabWrapper {
+  width: 40vw;
+}
+
+.tab {
+  border-radius: 0px 0px 5px 5px;
+  background-color: #568a80;
+  gap: 0;
+  height: 7vh;
+  border: 1px solid #1f1f1f;
+}
+
+.calculator-theme .tab:nth-of-type(1) {
+  background-color: #81a09a;
+  height: 6vh;
+  cursor: pointer;
+}
+.calculator-theme .tab:nth-of-type(1):hover {
+  background-color: rgba(129, 160, 154, 0.6705882353);
+}
+
+.weather-theme .tab:nth-of-type(2) {
+  background-color: #81a09a;
+  height: 6vh;
+  cursor: pointer;
+}
+.weather-theme .tab:nth-of-type(2):hover {
+  background-color: rgba(129, 160, 154, 0.6705882353);
+}
+
 body {
   background-color: #1f1f1f;
   color: #f8f8f8;

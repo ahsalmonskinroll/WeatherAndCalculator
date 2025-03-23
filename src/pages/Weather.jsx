@@ -3,10 +3,12 @@ import searchimg from "../design/assets/icons/search.svg";
 import rainyimg from "../design/assets/icons/rainy.svg";
 import snowyimg from "../design/assets/icons/snowy.svg";
 import backgroundimg from "../design/assets/backgrounds/rainy.svg";
+import Tabs from "../components/Tabs";
 
 function Weather() {
   return (
     <>
+      <Tabs className="weather-theme" />
       <main className="base2 df jc aic">
         <div className="container df jc">
           <div className="row border-weather">

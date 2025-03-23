@@ -1,6 +1,7 @@
 @import "./variables.scss";
 @import "./weather.scss";
 @import "./calculator.scss";
+@import "./tabs.scss";
 
 body {
   background-color: $black;
@@ -52,8 +53,8 @@ body {
   }
 }
 
-@media (max-width:992px) {
-  .hm{
+@media (max-width: 992px) {
+  .hm {
     margin-top: 16px;
   }
 }
