@@ -10,7 +10,7 @@ function Calculator() {
   return (
     <>
       <Tabs className="calculator-theme"/>
-      <main className="base2 df jc aic">
+      <main className="base3 df jc aic">
         <div className="container df jc">
           <div className="row border-weather2  df jc">
             <div className="filter df jc aic">

@@ -37,6 +37,20 @@
   }
 }
 
+#searchBar {
+  background-color: transparent;
+  border: none;
+  &::placeholder{
+    background-color: transparent;
+    color: $rainy-blue;
+  }
+  &:focus{
+    outline: none;
+    border: none;
+    color: $white;
+  }
+}
+
 .weather-imgs {
   width: 38px;
   img {
@@ -44,7 +58,7 @@
   }
 }
 
-.degree {
+.temp {
   line-height: 75px;
 }
 

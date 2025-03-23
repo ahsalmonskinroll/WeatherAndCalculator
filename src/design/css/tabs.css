@@ -78,6 +78,10 @@
   margin-top: 7vw;
 }
 
+.base3 {
+  margin-top: 2vw;
+}
+
 ::-moz-selection {
   color: #1f1f1f;
   background-color: #81a09a;
