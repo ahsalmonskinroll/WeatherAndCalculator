@@ -151,7 +151,7 @@ const Weather = () => {
           >
             <div></div>
 
-            <div className="col df jc aic">
+            <div className="col ">
               <div className="row content">
                 <div className="col-sm-12 col-md-12 col-lg-8 left df jc aie">
                   <div className="row bottom">
@@ -215,7 +215,7 @@ const Weather = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="col-12 text-12 black">
+                    <div className="col-12 text-12 white">
                       <div className="row">
                         <div className="results dg gap-3 mt-4 ">
                           {["İstanbul", "New York", "Birmingham", "Kahire"].map(
@@ -232,12 +232,12 @@ const Weather = () => {
                               </div>
                             )
                           )}
-                          <div className="col-12 bottom-line mt-4"></div>
+                          <div className="col-12 bottom-line my-4"></div>
                         </div>
                       </div>
                     </div>
                     {/* {weatherData?<> */}
-                    <div className="col-12 black">
+                    <div className="col-12 white">
                       <div className="row">
                         <div className="details dg gap-3 mt-4 ">
                           <div className="col-12">Weather Details</div>
@@ -273,7 +273,7 @@ const Weather = () => {
                               </div>
                             </div>
                           </div>
-                          <div className="col-12 bottom-line mt-4"></div>
+                          <div className="col-12 bottom-line my-4"></div>
                         </div>
                       </div>
                     </div>

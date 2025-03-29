@@ -1,15 +1,24 @@
-@import "./variables.scss";
+@function get-contrast-color($bg-color) {
+  $light-color: white;
+  $dark-color: black;
+  $contrast-threshold: 60%;
+
+  @if (lightness($bg-color) > $contrast-threshold) {
+    @return $dark-color;
+  } @else {
+    @return $light-color;
+  }
+}
+
+.dynamic-text {
+  background-color: var(--bg-color, #3498db); // Varsayılan mavi
+  color: get-contrast-color(var(--bg-color));
+}
+
 
 .border-weather {
   margin: 40px;
   box-shadow: -1px 0px 20px 3px #373535;
-  width: 60vw;
-}
-
-
-.content {
-  height: 60vh;
-  // border-radius: 10px;
 }
 
 .bottom {
@@ -69,24 +78,15 @@
   }
 }
 
-// @media (min-width: 1024px) {
-//   .border-weather {
-//     background-size: 112%;
-//   }
-// }
 
 
 @media (max-width: 1161px) {
-  .border-weather{
-    margin: 0;
-  }
-  .bottom{
+   .border-weather {
+     margin: 0;
+   }
+  .bottom {
     margin-top: 20px;
   }
 }
 
-@media (max-width: 1024px) {
-  // .border-weather {
-  //   background-size: cover;
-  // }
-}
+

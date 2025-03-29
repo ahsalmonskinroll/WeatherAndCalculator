@@ -1,7 +1,7 @@
 // kısaca rafce
 
 import React, { useState } from "react";
-import DisplayWindow from "./DisplayWindow";
+// import DisplayWindow from "./DisplayWindow";
 import KeysWindow from "./KeysWindow";
 
 const Calculator1 = () => {
@@ -16,7 +16,7 @@ const Calculator1 = () => {
     log: "Math.log10",
     π: "Math.PI",
     e: "Math.E",
-    "^": "*",
+    "^": "**",
     "√": "Math.sqrt",
   };
 
@@ -39,24 +39,20 @@ const Calculator1 = () => {
       setExpression("");
       setDisplayEXP("");
       setResult("0");
-    } 
-    else if (value === "DEL") {
+    } else if (value === "DEL") {
       setDisplayEXP(displayEXP.slice(0, -1));
       setExpression(expression.slice(0, -1));
-    } 
-    else if (sciFunc.hasOwnProperty(value)) {
+    } else if (sciFunc.hasOwnProperty(value)) {
       setDisplayEXP(displayEXP + value);
       setExpression(expression + sciFunc[value]);
-    } 
-    else if (value === "!") {
+    } else if (value === "!") {
       const lastNum = extractLastNum(expression);
       if (lastNum != null) {
         const num = parseFloat(lastNum);
         setDisplayEXP(displayEXP + value);
         setExpression(expression.replace(lastNum, factorial(num)));
       }
-    } 
-    else if (value === "=") calcResult();
+    } else if (value === "=") calcResult();
     else {
       setExpression(expression + value);
       setDisplayEXP(displayEXP + value);
@@ -76,7 +72,12 @@ const Calculator1 = () => {
 
   return (
     <div className="calculator">
-      <DisplayWindow expression={displayEXP} result={result} />
+      {/* <DisplayWindow expression={displayEXP} result={result} /> */}
+
+      <div className="displayWindow">
+        <p className="expression">{displayEXP}</p>
+        <p className="result">{result}</p>
+      </div>
       <KeysWindow handleButton={handleButton} />
     </div>
   );
